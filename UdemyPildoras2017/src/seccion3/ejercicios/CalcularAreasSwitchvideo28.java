@@ -12,6 +12,18 @@ public class CalcularAreasSwitchvideo28 {
                 + "\n2.- Rectangulo"
                 + "\n3.- Triangulo"
                 + "\n4.- Circulo\n"));
+        switch(figura){
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            default:
+                break;
+        }
         
     }
     
