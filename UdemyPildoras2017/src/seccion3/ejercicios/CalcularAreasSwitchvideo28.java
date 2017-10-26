@@ -21,6 +21,10 @@ public class CalcularAreasSwitchvideo28 {
                 JOptionPane.showMessageDialog(null,"El area del Cuadrado es: "+Math.pow(lado, 2));
                 break;
             case 2:
+                int base =Integer.parseInt(JOptionPane.showInputDialog("Ingrese la base"));
+                int altura =Integer.parseInt(JOptionPane.showInputDialog("Ingrese la Altura"));
+                JOptionPane.showMessageDialog(null, "El area del rectangulo de "+base+" * "
+                        +altura+" es = "+(base*altura));
                 break;
             case 3:
                 break;
