@@ -1,4 +1,4 @@
-package seccion3.flujo;
+package seccion3.controlFlujo;
 
 import javax.swing.JOptionPane;
 
