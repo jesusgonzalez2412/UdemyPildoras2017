@@ -1,4 +1,4 @@
-
+    
 package seccion3.poo;
 
 import javax.swing.JOptionPane;
@@ -12,13 +12,14 @@ public class usoVehiculos {
         Vehiculos mimoto1 = new Vehiculos(2);
         
         miCoche.setColor("Amarillo");
-        miCoche2.setExtra(true);
+        miCoche2.setExtra(true,false,true);
         
-        
+            
         System.out.println(miCoche.getColor());
         miCoche2.setColor("Rojo");
-        
         System.out.println(miCoche2.getExtra());
+        
+       
         System.out.println(miCoche.getDatosVehiculo());
         System.out.println(mimoto1.getDatosVehiculo());
     }

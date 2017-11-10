@@ -18,14 +18,22 @@ public class Vehiculos {
     public void setExtra(boolean climatizador) {
         this.climatizador = climatizador;
     }
+    
+    public void setExtra (boolean gps, boolean climatizador, boolean tapiceria_cuero){
+        this.climatizador=climatizador;
+        this.gps=gps;
+        this.tapiceriaCuero=tapiceria_cuero;
+        
+    }
 
     public String getExtra() {
 
-        if (climatizador == true) {
+        if (climatizador && gps== false && tapiceriaCuero == false ) 
             return "Tu coche tiene climatizador";
-        } else {
-            return "Tu coche no tiene climatizador";
-        }
+        else if(climatizador && gps && tapiceriaCuero) return "Tu vehiculo lleva el pack de extras";
+        
+        else return "La convinacion de estras que ha eligido no se Admite";
+        
     }
 
     public int getRueda() {
@@ -44,11 +52,11 @@ public class Vehiculos {
         this.color = color;
     }
 
-    public int getLargo() {
+    public double getLargo() {
         return largo;
     }
 
-    public void setLargo(int largo) {
+    public void setLargo(double largo) {
         this.largo = largo;
     }
 
@@ -78,7 +86,7 @@ public class Vehiculos {
 
     private int ruedas;
     private String color;
-    private int largo;
+    private double largo;
     private int ancho;
     private int peso;
     /**
